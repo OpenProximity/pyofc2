@@ -137,7 +137,7 @@ area_line = lambda **kw: area_linefactory(type='area_line', **kw)
 area_hollow = lambda **kw: area_linefactory(type='area_hollow', **kw)
 
 scatter_value = ofc_factory('values', ['x','y'])
-scatterfactory = ofc_factory('_scatter', ['type', 'dot_size', 'color', 'colour', 'values'])
+scatterfactory = ofc_factory('_scatter', ['type', 'dot_size', 'color', 'colour', 'values', 'dot_type', 'text'])
 scatter = lambda **kw: scatterfactory(type='scatter', **kw)
 scatter_line = lambda **kw: scatterfactory(type='scatter_line', **kw)
 
