@@ -27,7 +27,7 @@ FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
 OTHER DEALINGS IN THE SOFTWARE.
 """
 
-import anyjson
+import simplejson
 
 class OFCBase(dict):
     type = None
@@ -184,7 +184,7 @@ class open_flash_chart(OFCBase):
             self['menu']['values'] = [menu_value]
 
     def __str__(self):
-        return anyjson.serialize(self)
+        return simplejson.dumps(self)
 
     def render(self):
-        return anyjson.serialize(self)
+        return simplejson.dumps(self)

@@ -5,11 +5,12 @@ README = open(os.path.join(here, 'README.rst')).read()
 NEWS = open(os.path.join(here, 'NEWS.rst')).read()
 
 
-version = '0.1.5'
+version = '0.1.6'
 
-setup(name='PyOFC2',
+setup(name='PyOFC2-op',
       version=version,
-      description="Python library for Open Flash Chart 2",
+      description=
+      "Python library for Open Flash Chart 2 modified for OpenProximity",
       long_description=README + "\n\n" + NEWS,
       classifiers=[
         "Development Status :: 4 - Beta",
@@ -27,7 +28,7 @@ setup(name='PyOFC2',
       include_package_data=True,
       zip_safe=False,
       install_requires=[
-        "anyjson>=0.1",
+        "simplejson",
       ],
       entry_points="""
       # -*- Entry points: -*-
